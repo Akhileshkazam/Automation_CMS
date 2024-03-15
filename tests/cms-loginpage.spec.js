@@ -16,5 +16,6 @@ test ('Browse Context-Validating Error login',async({browser}) =>
    await page.locator("#password").type("Akbl@1724");
    await page.getByRole("button", {name: "Login"}).click();
    await page.goto("https://novo.kazam.in/org");
+   await page.pause(500)
 });
 
